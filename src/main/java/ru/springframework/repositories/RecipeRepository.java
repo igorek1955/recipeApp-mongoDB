@@ -1,8 +1,8 @@
 package ru.springframework.repositories;
 
+import org.springframework.data.mongodb.repository.MongoRepository;
 import ru.springframework.domain.Recipe;
-import org.springframework.data.repository.CrudRepository;
 
 
-public interface RecipeRepository extends CrudRepository<Recipe, String> {
+public interface RecipeRepository extends MongoRepository<Recipe, String> {
 }

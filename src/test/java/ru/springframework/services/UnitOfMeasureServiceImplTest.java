@@ -9,7 +9,9 @@ import org.junit.Test;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 
+import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 import static org.junit.Assert.assertEquals;
@@ -33,7 +35,7 @@ public class UnitOfMeasureServiceImplTest {
     @Test
     public void listAllUoms() throws Exception {
         //given
-        Set<UnitOfMeasure> unitOfMeasures = new HashSet<>();
+        List<UnitOfMeasure> unitOfMeasures = new ArrayList<>();
         UnitOfMeasure uom1 = new UnitOfMeasure();
         uom1.setId("1");
         unitOfMeasures.add(uom1);
