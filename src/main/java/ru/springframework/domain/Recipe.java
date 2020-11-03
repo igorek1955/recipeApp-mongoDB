@@ -8,6 +8,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.util.HashSet;
 import java.util.Set;
+import java.util.UUID;
 
 
 @Getter
@@ -15,8 +16,7 @@ import java.util.Set;
 @Document
 public class Recipe {
 
-    @Id
-    private String id;
+    private String id = UUID.randomUUID().toString();
     private String description;
     private Integer prepTime;
     private Integer cookTime;
