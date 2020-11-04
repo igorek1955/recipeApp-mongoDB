@@ -1,5 +1,6 @@
 package ru.springframework.repositories;
 
+import org.springframework.boot.test.autoconfigure.data.mongo.DataMongoTest;
 import ru.springframework.domain.UnitOfMeasure;
 import org.junit.Before;
 import org.junit.Ignore;
@@ -16,7 +17,7 @@ import static org.junit.Assert.assertEquals;
 
 @Ignore
 @RunWith(SpringRunner.class)
-@DataJpaTest
+@DataMongoTest
 public class UnitOfMeasureRepositoryIT {
 
     @Autowired
