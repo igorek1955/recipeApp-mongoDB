@@ -3,7 +3,7 @@
 
 It's a simple Spring Boot application for demonstration purposes.
 
-To esteblish connection to the database refer to application.properties.
+To establish connection to the database refer to application.properties.
 ```
 spring.data.mongodb.uri=mongodb+srv://<username>:<password>@cluster0.c52cy.mongodb.net/test?retryWrites=true&w=majority
 ```
